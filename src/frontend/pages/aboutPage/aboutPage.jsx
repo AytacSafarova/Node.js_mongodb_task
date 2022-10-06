@@ -1,9 +1,7 @@
-import React from "react";
-
-function AboutPage(){
-  return(
+function AboutPage() {
+  return (
     <>
-    <div>sds</div>
+      <div>About Page</div>
     </>
   )
 }

@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
-import "../src/App.css"
+import "../src/App.css";
 import HomePage from "./frontend/pages/homePage/homePage";
 import AboutPage from "./frontend/pages/aboutPage/aboutPage";
 import UsersPage from "./frontend/pages/usersPage/usersPage";
 import AddUser from "./frontend/pages/usersPage/adduserPage.jsx";
+
 function App() {
   return (
     <>
@@ -24,8 +25,8 @@ function App() {
             <Link className="link" to="/about">
               About
             </Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link className="link" to="/add">
               Add User
             </Link>
@@ -36,12 +37,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/users" element={<UsersPage />} />
-        <Route path="/about" element={<AboutPage />} />      
-          <Route path="/add" element={<AddUser />} />
-
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/add" element={<AddUser />} />
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

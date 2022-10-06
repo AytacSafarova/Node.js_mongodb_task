@@ -1,10 +1,6 @@
-import React from "react";
+import React from "react"
 
-function HomePage(){
-  return(
-    <>
-    user
-    </>
-  )
+function HomePage() {
+  return <>Home Page</>
 }
 export default HomePage
